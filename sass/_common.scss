@@ -1,0 +1,87 @@
+//VARIABLES ==================
+
+//COLORS
+$primaryColor : #ee572a;
+$SecondaryColor : #272727;
+$color-1 : #7b7f86;
+
+//FONTS
+$primaryFont: 'Avenir', sans-serif;
+
+//============================
+
+img {
+    width: 100%;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,h2,h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+p {
+    color: $color-1;
+}
+body {
+    font-family: $primaryFont;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #fafafa;
+
+}
+
+// ============= Buttons ==================
+.btn {
+    background-color: transparent;
+    color: $primaryColor;
+    font-size: 16px;
+    display: block;
+    padding: 12px 20px;
+    text-align: center;
+    border-color: $primaryColor;
+    outline: none;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    &:hover, &:focus, &:active {
+        outline: none;
+        color: $primaryColor;
+    }
+    &.primary {
+        background: $primaryColor;
+        text-align: left;
+        color: #fff;
+        padding: 6px 15px;
+    }
+    &.outline {
+        background: transparent;
+        text-align: left;
+        color: $primaryColor;
+    }
+    .arrow-right {
+        display: inline-block;
+        box-sizing: border-box;
+        // position: absolute;
+        margin-left: 10px;
+        margin-right: 5px;
+        width: 6px;
+        height: 6px;
+        border-top: 2px solid;
+        border-right: 2px solid;
+        transform: rotate(45deg);
+        right: 0;
+        bottom: -2px;
+    }
+}

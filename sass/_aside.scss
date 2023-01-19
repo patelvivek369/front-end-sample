@@ -1,0 +1,45 @@
+
+.sideinfo {
+    padding-bottom: 35px;
+    h3 {
+        margin-bottom: 30px;
+        padding-right: 20px;
+        .icon {
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 10px;
+            svg {
+                width: 25px;
+                fill: $color-1;
+            }
+        }
+    }
+    ul li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        span {
+            color: $primaryColor;
+            font-weight: 800;
+            font-size: 32px;
+            margin-right: 10px;
+            line-height: 1;
+        }
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    hr {
+        border-color: #e7e7e7;
+        width: 70%;
+        margin: 38px 0;
+    }
+    .a_group {
+        .btn {
+            margin-right: 7.5px;
+            @include MQ(S) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+.c_checkbox {
+	position: relative;
+	// cursor: pointer;
+	// width: 100%;
+    // user-select: none;
+    // flex: 1 0 calc(50% - 8px);
+    // margin-left: 0px;
+    // margin: 5px;
+	padding-bottom: 10px;
+    input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+		&:checked {
+			~ {
+				.checkmark {
+					background-color: $primaryColor;
+                    color: #fff;
+					.tick {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+	.checkmark {
+		display: flex;
+		justify-content: center;
+        .tick {
+            display: none;
+			margin-left: 10px;
+            width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+		}
+	}
+}

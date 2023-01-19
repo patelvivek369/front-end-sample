@@ -1,0 +1,79 @@
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+    border: none;
+    box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.03);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+    &:before, &:after {
+        display: none;
+    }
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:before, &:after {
+            display: none;
+        }
+    }
+}
+.navbar-default .navbar-brand {
+    display: flex;
+    align-items: center;
+    
+    .logo {
+        margin-right: 40px;
+        width: 120px;
+        max-width: 100%;
+        height: auto;
+    }
+    &:hover {
+        color: $primaryColor;
+    }
+    .course {
+        color: $primaryColor;
+        font-weight: 600;
+        font-size: 16px;
+        
+    }
+    @media screen and (max-width: 480px) {
+        .course { font-size: 12px; margin-top: 10px;}
+    }
+}
+.navbar-default .navbar-nav>li> .profile_dd, .profile_dd {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-weight: 900;
+    font-size: 16px;
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: #333;
+    }
+}
+.navbar-right {
+    padding: 15px;
+}
+.dropdown-menu {
+    min-width: auto;
+    border: none;
+    top: 90%;
+    box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.06);
+    li a{
+        font-weight: 900;
+    }
+}
+.prof_img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+   
+   
+}
