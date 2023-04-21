@@ -1,4 +1,4 @@
-# Test for Front End Developer
+# Front End Development
 
 ### This project was bootstrapped with HTML3, CSS3, Specific Using SCSS and using Bootstrap V 3.2.0
 
